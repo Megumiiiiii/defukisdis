@@ -1,0 +1,32 @@
+[book]
+authors = ["megumii"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Kyoushitsu Book"
+
+[build]
+extra-watch-dirs = ["translations"]
+
+[preprocessor.last-changed]
+command = "mdbook-last-changed"
+renderer = ["html"]
+
+[output.html]
+git-repository-url = "https://github.com/Megumiiiiii/defukisdis"
+edit-url-template = "https://github.com/Megumiiiiii/defukisdis/edit/main/{path}"
+google-analytics = "G-0ZJLBV4KE2"
+site-url = "/defukisdis/"
+cname = "book.megumii.xyz"
+
+[output.html.playground]
+editable = true
+copyable = true
+line-numbers = false
+runnable = true
+
+[output.html.search]
+enable = true
+limit-results = 30
+expand = true
+boost-title = 2
